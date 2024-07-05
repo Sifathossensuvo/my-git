@@ -1,50 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>form</title>
-<style>
-    label{
-        display: block;
-        margin-top: 10px;
-    }
-</style>
+    <title>Form</title>
+    <style>
+        body {
+            background-image: url("https://cdn.pixabay.com/photo/2020/05/07/04/01/digitization-5140071_640.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .section{
+            color: white;
+            display: block;
+            display: flex;
+            justify-content: center;
+            
+        }
+        form{
+            margin-top: 30px;
+            font-size: xx-large;
+        }
+        .h{
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+    
+        }
+        input{
+            padding: 10px;
+            font-size: 20px;
+        }
+        .submit{
+            padding: 10px 100px;
+            margin-top: 20px;
+            
+        }
+        .cl{
+            color: blue;
+        }
+        .na{
+            color: red;
+        }
+        .div{
+            border: 2px solid orange;
+            margin-top: 100px;
+        }
+    </style>
 </head>
-<body>
-    <header>
 
-    </header>
-    <main>
-<section>
-    <h1>fill up the form</h1>
-    <form action="">
-        <label for="name">Your name:
-            <input id="name" type="text" placeholder="Your name">
-        </label>
-        <label for="Email">Your Email:
-            <input id="Email" type="text" placeholder="Your Email">
-        </label>
-        <label for="">Your phone:
-            <input type="text" placeholder="Your phone">
-        </label>
-        <fieldset>
-            <legend>pick one pitha</legend>
-            <label for="chetoi">
-                <input type="radio" name="pitha" id="">chetoi
-            </label>
-            <label for="Vapa">
-                <input type="radio" name="pitha" id="">Vapa
-            </label>
-            <label for="puli">
-                <input type="radio" name="pitha" id="">puli
-            </label>
-            <label for="cake">
-                <input type="radio" name="pitha" id="">cake
-            </label>
-        </fieldset>
-    </form>
-</section>   
- </main>
+<body>
+    <main class="main">
+        <h1 class="h">Please fill up the form</h1>
+        <section class="section">
+            
+           <div class="div">
+             <!-- form -->
+             <form action="">
+                
+                <label for="name">Your name: <br>
+<input type="text" class="na" placeholder="Your name" required>
+                </label>
+            </form>
+            <form action="">
+                
+                <label for="">Your Email: <br>
+<input type="email" placeholder="Your Email" required>
+                </label>
+            </form>
+            <form action="">
+                
+                <label for="">Your Password: <br>
+<input type="password" class="cl" placeholder="Your password" required>
+                </label>
+            </form>
+<input type="submit" class="submit" value="Submit">
+
+           </div>
+
+        </section>
+    </main>
 </body>
+
 </html>
